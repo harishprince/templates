@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+	{% block content %}
+	<!-- Add your site or application content here -->
+					<form >
+						<fieldset id="fieldset" >
+							<hr style="width:5%;margin-top:-19.75px;margin-left:0px;border:1.5px solid #A9A9A9;">
+							<legend ><div class ="vr" style = "margin-left:47px;margin-top:201px;background-color:#A9A9A9;height:20px;width: 2px;"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="font-size:25px;">Create An Account</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class ="vr" style = "margin-left:327px;margin-top:201px;background-color:#A9A9A9;height:20px;width: 2px;"></div></legend>
+							<p id="error" style="color: red;text-align: center;">&nbsp;</p>
+								<br>
+								<table style = "margin-left: 50px;">
+									<tr>
+										<td>
+											<label style = "float:right;" for="First Name">First Name</label>
+										</td>
+										<td style="width:312px;">
+											<input style="margin-left: 10px; margin-top: 7px;margin-bottom: 7px;" type="text" name="first_name" id="first_name" value="" class="form-control" >
+										</td>
+										<td>
+											<label style = "float:right;" for="Phone Number">Phone Number</label>
+										</td>
+										<td>
+											<input style="margin-left: 10px;" type="text" name="phone_number" id="phone_number" value="" class="form-control">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label style = "float:right;" for="Last Name">Last Name</label>
+										</td>
+										<td>
+											<input style="margin-left: 10px;margin-top: 7px;margin-bottom: 7px;" type="text" name="last_name" id="last_name" value="" class="form-control">
+										</td>
+										<td>
+											<label style = "float:right;" for="Email Id">Email Id</label>
+										</td>
+										<td>
+											<input  style="margin-left: 10px;" type="text" name="email_id" id="email_id" value="" class="form-control">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label style = "float:right;" for="Address">Address</label>
+										</td>
+										<td>
+											<input style="margin-left: 10px;margin-top: 7px;margin-bottom: 7px;" type="text" name="address" id="address" value="" class="form-control">
+										</td>
+										<td>
+											<label style = "float:right;" for="Login Password">Login Password</label>
+										</td>
+										<td>
+											<input style="margin-left: 10px;" type="password" name="login_password" id="login_password" value="" class="form-control">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label style = "float:right;" for="City">City</label>
+										</td>
+										<td>
+											<input style="margin-left: 10px;margin-top: 7px;margin-bottom: 7px;" type="text" name="city" id="city" value="" class="form-control">
+										</td>
+										<td>
+											<label style = "float:right;" for="Confirm password">Confirm password</label>
+										</td>
+										<td>
+											<input style="margin-left: 10px;" type="password" name="confirm_password" id="confirm_password" value="" class="form-control">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label style = "float:right;"  for="Date of Birth">Date of Birth</label>
+										</td>
+										<td>
+											<input id="datepicker" style="margin-left: 10px;margin-top: 7px;margin-bottom: 7px;" type="text" name="date_of_birth"  value="" class="form-control">
+										</td>
+									</tr>
+									<tr>
+										<td style="padding-bottom: 50px;">
+											<label style = "float:right;" for="Disclaimer">Disclaimer<br></label>
+										</td>
+										<td>
+											<br>
+											<div style="width:310px;">
+												<div style="width:30px;display:inline-block; float:left;"><input type="checkbox" name="disclaimer" value="d" style=" width: 20px; margin-top: 5px; height: 20px; background-color: white;"></div>
+												<div style="width:250px;display:inline-block;"><p style="text-align:justify; font-size: 11px;margin-top: 4px;">You agree to not use your website to conduct any activity that would constitute a civil or criminal offence or violate any law.You agree not to attempt to interface with our website's networkor security features or to gain unauthorized	access to our system.</p></div>
+											</div>
+										</td>
+										<td>
+										</td>
+										<td>
+											<br><br><br>
+											<button type="button" id="register" class="form-control" style="background-color: #7f7fff; color: white; height: 35px; font-size: 18px;">Register</button>
+										</td>
+									</tr>
+								</table>
+						</fieldset>
+					</form>
+
+	{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+	

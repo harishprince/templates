@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style type="text/css">
+    			  .box {
+            background: #fff;
+            border-radius: 2px;
+            display: inline-block;
+            height: 470px;
+            margin: 1rem;
+            position: relative;
+            width: 1225px;
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+            }	
+              .input {
+              font-family: 'FontAwesome', 'Arial';
+              font-style: normal;
+              font-weight: normal;
+              text-decoration: inherit;
+              font-size: 14px;
+    			
+              }
+              
+        .navbar-inverse .navbar-nav > li > a {
+           color: black !important;
+        }
+
+
+        .navbar-brand img {
+           width: 200px;
+           height: 60px;
+           margin-top: -12px;
+        }
+
+        .navbar-inverse {
+           background-color: white;
+           border-color: white;
+        	 
+        }
+        </style>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+      
+
+         
+    </head>
+    
+
+<body  style="background-color:#fafafa;">
+
+
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container" style="width:100%;">
+                <div class="navbar-header" style="width:100%;height:75px;">
+                    <a class="navbar-brand" runat="server" href="~/" >
+                        <img src="/static/image/1.jpg/" style="width:100%;"></a>
+                    <div class="col-md-5 col-sm-6 col-xs-10 navbar-right">
+                        <div class="navbar-form " role="search" style="border: none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        	<div class="row">
+                <div style="background-color:#fafafa;">
+
+                    <div class="container" style="border:2px solid blue; width:100%; height:50px; background-color:#3588DA;">
+        	            <div class="col-sm-2 col-sm-3 col-xs-8 navbar-right ">
+        	                <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+        		           		<img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" style="width:30px;height:25px; margin-left:px;margin-top:10px;"></img>
+        		           	</a>
+        					<a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+        						<img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" style="width:30px;height:25px; margin-left:10px;margin-top:10px;"></img>
+        					</a>            
+        					<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
+        		   				<img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="Google"  style="width:30px;height:25px; margin-left:10px;margin-top:10px;"></img> 
+        		   			</a>
+        				</div>
+        	        </div>
+        	    </div>
+        	</div>
+        </div>
+		<br>
+        <div class="container" style="margin-top:130px;background-color:#ffffff;height:auto;box-shadow:0px 3px 3px 3px #d3cfcf;"> 	
+            <div class="row" style=" margin-top:20px;margin-bottom:20px;">
+                <!--
+                <legend style="margin-left:5%;width:auto;border-bottom: none;border-left: 2px solid #A9A9A9;border-right: 2px solid #A9A9A9;"> &nbsp;Create Service provider an Account &nbsp;</legend>
+                -->
+        		<!-- <legend align="left">Create Service provider an Account</legend> -->
+                                   
+                
+                <form class="form-horizontal"><div id="write"></div>
+                <div class="col-sm-1"></div>
+
+                <fieldset class="col-sm-10" style="border:1px solid grey; border-radius: 8px;">
+                <legend style="border-bottom: none;border-left: 1px solid grey;border-right: 1px solid grey;width: auto;margin-left: 20px;">&nbsp;Create Service provider an Account&nbsp;</legend>
+                    
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="first_name" class="col-sm-3 control-label">First Name</label>
+                            <div class="col-sm-8">
+                                <input  style="border-radius:0px;background-color:#f8f8f8;" type="text" class="form-control" id="first_name" placeholder="first name" name="" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name" class="col-sm-3 control-label">Last Name</label>
+                            <div class="col-sm-8">
+                                <input  style="border-radius:0px;background-color:#f8f8f8;" type="text" class="form-control" id="last_name" placeholder="Last Name" name="last_name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address" class="col-sm-3 control-label">Address</label>
+                            <div class="col-sm-8">
+                                <input style="border-radius:0px;background-color:#f8f8f8;" type="text" class="form-control" id="address" placeholder="Address" name="address" >  
+        	                </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="city" class="col-sm-3 control-label">City</label>
+                            <div class="col-sm-8">
+                                <input  style="border-radius:0px;background-color:#f8f8f8;" type="text" class="form-control" id="city" placeholder="City" name = "city">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="date_of_birth" class="col-sm-3 control-label">Date of Birth</label>
+                            <div class="col-sm-8">
+                                <input style="border-radius:0px;background-color:#f8f8f8;" type="text" class="form-control" id="datepicker" placeholder="Date of Birth" name="date_of_birth">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="disclaimer" class="col-sm-3 control-label">Disclaimer</label>
+                            <div class="col-sm-8">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="disclaimer" required> 
+                                    </label>You agree to not use your website to conduct any activity that would constitute a civil or criminal offence or violate any law.You agree not to attempt to interface with our website's networkor security features or to gain unauthorized access to our system.
+                         
+                                </div>
+                        	</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" >
+                        <div class="form-group">
+                            <label for="company name" class="col-sm-4 control-label">Company Name</label>
+                            <div class="col-sm-8">
+                                <input style="border-radius:0px;background-color:#f8f8f8;" type="text" class="form-control" id="company_name" placeholder="Company Name" name="company_name" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="typeofservices"  class="col-sm-4 control-label">Type of Services</label>
+                            <div class="col-sm-8">
+                                <select input style="border-radius:0px;" type="text" class="form-control" id="type_of_service" >
+                                    <option value="Type of Services">Type of Services</option>
+                                    <option value="1">Car wash</option>
+                                    <option value="2">Salons</option>
+                                    <option value="3">Car wash alignment</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="form-group">
+                          <label for="typeofservices" class="col-sm-3 control-label">Type of Services</label>
+                        	
+                          <div class="col-sm-6">
+                            <input style="border-radius:0px;" type="text" class="form-control" id="typeofservices" placeholder="Type of Services" required>
+                        	  
+                          </div>
+                        	
+                        </div>
+                        -->
+                        <div class="form-group">
+                            <label for="phone_number" class="col-sm-4 control-label">Phone Number</label>
+                            <div class="col-sm-8">
+                                <input style="border-radius:0px;background-color:#f8f8f8;"  type="text" class="form-control" id="phone_number" placeholder="phonenumber" name="phone_number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email_id" class="col-sm-4 control-label">Email Id</label>
+                            <div class="col-sm-8">
+                                <input style="border-radius:0px;background-color:#f8f8f8;"  type="text" class="form-control" id="email_id" placeholder="Email Id" name="email_id" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="login_password" class="col-sm-4 control-label">Login Password</label>
+                            <div class="col-sm-8">
+                                <input style="border-radius:0px;background-color:#f8f8f8;" type="password" class="form-control" id="login_password" placeholder="Login Password" name="login_password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm_password" class="col-sm-4 control-label">Confirm Password</label>
+                            <div class="col-sm-8">
+                                <input style="border-radius:0px;background-color:#f8f8f8;"  type="password" class="form-control" id="confirm_password" placeholder="confirmpassword" name="confirm_password">
+                            </div>
+                        </div>
+                        <div id="write"></div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-10">
+                               <button     type="submit" onclick="formValidation()" class="btn btn-primary col-sm-9 col-xs-12">Register
+                               </button>
+                            </div>
+                        </div> 
+
+                    </div>
+                    <!-- <div class="col-sm-2"></div> -->
+                </fieldset>
+				
+			
+                </form>
+				
+	<div id="write"></div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+            $("#datepicker").datepicker({dateFormat: 'yy-mm-dd'});
+            });
+        </script>
+
+
+<script type="application/javascript">
+function formValidation()
+{   
+
+var fname = document.getElementById("first_name").value; 
+var lname = document.getElementById("last_name").value;
+var cname = document.getElementById("company_name").value; 
+var address = document.getElementById("address").value;  
+var city = document.getElementById("city").value;  
+var phone = document.getElementById("phone_number").value;
+
+var email = document.getElementById("email_id").value;  
+
+var password = document.getElementById("login_password").value;  
+var confirmpassword = document.getElementById("confirm_password").value;
+var date_of_birth = document.getElementById("datepicker").value;
+var disclaimer = document.getElementById("disclaimer").checked;
+var type_of_service = document.getElementById("type_of_service").value;
+
+ 
+var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+//var mob = /^{10}\d$/;
+
+if(fname.trim().length > 3 && fname.length < 30)
+{
+  if(lname.trim().length > 3 && lname.length < 30)
+  {
+    if(password.trim().length > 8 && password.length < 16)
+      {
+        if(confirmpassword.trim().length > 8 && confirmpassword.length < 16)
+          {
+            if(addr.trim().length > 10)
+              {
+                if(mob.trim().length > 0 && mob.length == 10)
+                {
+                   if(company.trim().length > 3 && company.length < 30)
+                    {
+                       if(city.trim().length > 0 && city.length < 30)
+                        {
+                
+                          if (!filter.test(mail))
+                            {
+                               document.getElementById("write").innerHTML="pls enter VALID email";
+    
+                               return false;
+                            }else
+                            {
+                              document.getElementById("write").innerHTML="  ";
+                            }
+                        }
+                          else 
+                          {
+                            document.getElementById("write").innerHTML="enter ur city name";
+                            return false;
+                          }
+                    } 
+                        else 
+                        {
+                          document.getElementById("write").innerHTML="pls enter company name";
+                          return false;
+                        }
+                }
+                      else 
+                      {
+                        document.getElementById("write").innerHTML="pls enter vaild mobile";
+                        return false;
+                      }
+             }
+             else 
+              {
+                document.getElementById("write").innerHTML="address greater than 10 char";
+                return false;
+              }
+          }
+          else {
+                document.getElementById("write").innerHTML =  "enter confirm password  of 8-16 char ";
+               }
+      }     
+          else{
+                document.getElementById("write").innerHTML =  "enter password of 8-16 char ";
+              }
+  }else {
+         document.getElementById("write").innerHTML =  "enter lastname in range 3-30 ";
+        }
+}
+  else {
+          document.getElementById("write").innerHTML = "enter firstname in range 3-30 ";
+        }
+
+
+
+var data = {
+        "first_name":fname,
+         'last_name':lname,
+          'address':address,
+          'city':city,
+           'date_of_birth':date_of_birth,
+           'company_name':cname,
+           'type_of_service' :type_of_service,
+           'phone_number':phone,
+           'email_id':email,
+           'login_password':password,
+           'confirm_password':confirmpassword,
+           'disclaimer': disclaimer}
+    $.ajax({
+            type : 'POST',
+            async: false,
+            url: "/v1/service_provider_signing/",
+            method: "POST",
+            crossDomain: true,
+            dataType: 'json',
+            data: data,
+                success: function(data) {
+                  window.location.href = "/v1/service_provider_login/" 
+                  console.log(data)
+                },
+                error: function(data) {
+                  alert(data.responseText);
+                  console.log(data)
+                }
+
+        });
+}        
+
+
+
+
+
+
+
+
+
+
+/*if(fname.trim().length > 3 && fname.length < 30)
+{
+  if(lname.trim().length > 3 && lname.length < 30)
+  {
+   
+    if(addr.trim().length > 10)
+      {
+        if(mob.trim().length > 0 && mob.length == 10)
+          {
+            if(company.trim().length > 3 && company.length < 30)
+            {
+              if(city.trim().length > 0 && city.length < 5){
+                
+                  if (!filter.test(mail))
+                  {
+                    document.getElementById("write").innerHTML="pls enter VALID email";
+    
+                   return false;
+                  }else{document.getElementById("write").innerHTML="  ";}
+                }else {
+                  document.getElementById("write").innerHTML="enter year of Establishment";
+                  return false;
+                }
+            } 
+            else 
+            {
+              document.getElementById("write").innerHTML="pls enter company name";
+              return false;
+            }
+         }
+         else 
+          {
+           document.getElementById("write").innerHTML="pls enter vaild mobile";
+            return false;
+          }
+      }
+      else 
+      {
+        document.getElementById("write").innerHTML="address greater than 10 char";
+       return false;
+      }
+    }
+    else 
+    {document.getElementById("write").innerHTML =  "enter lastname in range 3-30 ";}
+  } 
+  else 
+  {
+  document.getElementById("write").innerHTML = "enter firstname in range 3-30 ";
+  }*/
+
+  }
+</script></body>
+</html>
+		
